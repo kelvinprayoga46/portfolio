@@ -38,21 +38,24 @@ $(document).ready(function () {
     });
 
     // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+$("#contact-form").submit(function (event) {
+    event.preventDefault(); // mencegah reload halaman
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
+    emailjs.init({
+        publicKey: "aCKlFk4B9McyZ6MSQ" // ← PUBLIC KEY kamu
     });
-    // <!-- emailjs to mail contact form data -->
+
+    emailjs.sendForm('service_oj8srnw', 'service_oj8srnw', '#contact-form')
+        .then(function () {
+            alert("Form submitted successfully!");
+            document.getElementById("contact-form").reset();
+        }, function (error) {
+            console.error("FAILED...", error);
+            alert("Failed to send message. Please try again later.");
+        });
+});
+// <!-- emailjs to mail contact form data -->
+
 
 });
 
