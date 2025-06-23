@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Wireshark",
+        "icon": "/assets/images/wireshark.png"
+    },
+    {
+        "name": "Firebase",
+        "icon": "https://img.icons8.com/color/48/000000/firebase.png"
+    },
+    {
+        "name": "Android",
+        "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
+    },
+    {
+        "name": "HTML",
+        "icon": "https://img.icons8.com/color/48/000000/html.png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "OWASP ZAP",
+        "icon": "/assets/images/owasp.png"
+    },
+    {
+        "name": "Red Hat",
+        "icon": "/assets/images/redhat.png"
+    },
+    {
+        "name": "PHP",
+        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+    {
+        "name": "Nikto",
+        "icon": "/assets/images/nikto.png"
+    },
+    {
+        "name": "XSS Hunter",
+        "icon": "/assets/images/xsshunter.png"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+    {
+        "name": "Burp Suite",
+        "icon": "/assets/images/BurpSuite_Comunity_Edition.png"
+    },
+    {
+        "name": "NMAP",
+        "icon": "/assets/images/NMAP.png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    },
+    {
+        "name": "JADX",
+        "icon": "/assets/images/jadx.png"
+    },
+    {
+        "name": "Kali Linux",
+        "icon": "/assets/images/kali.png"
+    }     
+]
