@@ -64,7 +64,7 @@ $(document).ready(function () {
     emailjs.sendForm(serviceID, templateID, this).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
-        document.getElementById("contact-form").reset();
+        contactForm.reset();
         alert("Form Submitted Successfully");
         // Reset button
         submitBtn.innerHTML = originalText;
