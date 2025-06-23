@@ -49,6 +49,8 @@ $(document).ready(function () {
   const errorMessage = document.getElementById("error-message");
 
   contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
     // Ubah status button
     const originalText = submitBtn.innerHTML;
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
@@ -77,7 +79,6 @@ $(document).ready(function () {
         submitBtn.disabled = false;
       }
     );
-    event.preventDefault();
   });
   // <!-- emailjs to mail contact form data -->
 });
