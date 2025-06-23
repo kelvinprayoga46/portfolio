@@ -49,8 +49,6 @@ $(document).ready(function () {
   const errorMessage = document.getElementById("error-message");
 
   contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
     // Ubah status button
     const originalText = submitBtn.innerHTML;
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
@@ -64,7 +62,7 @@ $(document).ready(function () {
     emailjs.sendForm(serviceID, templateID, this).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
-        contactForm.reset();
+        document.getElementById("contact-form").reset();
         alert("Form Submitted Successfully");
         // Reset button
         submitBtn.innerHTML = originalText;
@@ -79,6 +77,7 @@ $(document).ready(function () {
         submitBtn.disabled = false;
       }
     );
+    event.preventDefault();
   });
   // <!-- emailjs to mail contact form data -->
 });
