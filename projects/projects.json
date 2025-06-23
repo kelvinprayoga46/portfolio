@@ -58,5 +58,15 @@
       "view": "https://youtu.be/JewQlS3fM_4?si=n1OQqamPoEDJMwr6",
       "code": "https://youtu.be/JewQlS3fM_4?si=n1OQqamPoEDJMwr6"
     }
+  },
+  {
+    "name": "Cyber-Physical System Security Project",
+    "desc": "This project has several lab parts about MQTT, Broker, Subscriber, and Publisher.",
+    "image": "cpss",
+    "category": "web",
+    "links": {
+      "view": "https://www.youtube.com/@itsyourtimehelix/playlists",
+      "code": "https://github.com/kelvinprayoga46/CPSS"
+    }
   }
 ]
