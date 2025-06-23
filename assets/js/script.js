@@ -56,10 +56,6 @@ $(document).ready(function () {
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
     submitBtn.disabled = true;
 
-    // Sembunyikan pesan sebelumnya
-    successMessage.style.display = "none";
-    errorMessage.style.display = "none";
-
     // Konfigurasi service dan template ID
     const serviceID = "default_service"; // Ganti dengan Service ID Anda
     const templateID = "template_zgugfyg"; // Ganti dengan Template ID Anda
@@ -68,23 +64,16 @@ $(document).ready(function () {
     emailjs.sendForm(serviceID, templateID, this).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
-
-        // Reset form
         contactForm.reset();
-
-        // Tampilkan pesan sukses
-        successMessage.style.display = "block";
-
+        alert("Form Submitted Successfully");
         // Reset button
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
       },
       function (error) {
         console.log("FAILED...", error);
-
         // Tampilkan pesan error
-        errorMessage.style.display = "block";
-
+        alert("Form Submission Failed! Try Again");
         // Reset button
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
