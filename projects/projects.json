@@ -68,5 +68,15 @@
       "view": "https://www.youtube.com/@itsyourtimehelix/playlists",
       "code": "https://github.com/kelvinprayoga46/CPSS"
     }
+  },
+  {
+    "name": "Browser Password Stealer ",
+    "desc": "This project creates a tool to steal passwords from the browser used by the victim.",
+    "image": "stealer",
+    "category": "web",
+    "links": {
+      "view": "https://www.youtube.com/watch?v=cD0qZ6eVhRc",
+      "code": "https://www.youtube.com/watch?v=cD0qZ6eVhRc"
+    }
   }
 ]
