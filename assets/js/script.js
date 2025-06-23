@@ -42,7 +42,7 @@ $("#contact-form").submit(function (event) {
     event.preventDefault(); // mencegah reload halaman
 
     emailjs.init({
-        publicKey: "aCKlFk4B9McyZ6MSQ" // ← PUBLIC KEY kamu
+        publicKey: "5Zp2jGRolQNauoQlC" // ← PUBLIC KEY kamu
     });
 
     emailjs.sendForm('service_oj8srnw', 'template_zgugfyg', '#contact-form')
