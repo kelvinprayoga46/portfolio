@@ -48,5 +48,15 @@
       "view": "https://github.com/kelvinprayoga46/polibatam.id-bypass",
       "code": "https://github.com/kelvinprayoga46/polibatam.id-bypass"
     }
+  },
+  {
+    "name": "Implementation Server Monitoring Using Prometheus and Grafana",
+    "desc": "Implementing Prometheus and Grafana as monitoring tools and integrating alert notification to telegram",
+    "image": "massive",
+    "category": "web",
+    "links": {
+      "view": "https://youtu.be/JewQlS3fM_4?si=n1OQqamPoEDJMwr6",
+      "code": "https://youtu.be/JewQlS3fM_4?si=n1OQqamPoEDJMwr6"
+    }
   }
 ]
