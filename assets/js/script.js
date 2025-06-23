@@ -45,7 +45,7 @@ $("#contact-form").submit(function (event) {
         publicKey: "aCKlFk4B9McyZ6MSQ" // ← PUBLIC KEY kamu
     });
 
-    emailjs.sendForm('service_oj8srnw', 'service_oj8srnw', '#contact-form')
+    emailjs.sendForm('service_oj8srnw', 'template_zgugfyg', '#contact-form')
         .then(function () {
             alert("Form submitted successfully!");
             document.getElementById("contact-form").reset();
