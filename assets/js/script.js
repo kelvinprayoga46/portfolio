@@ -38,22 +38,28 @@ $(document).ready(function () {
     });
 
     // <!-- emailjs to mail contact form data -->
-$("#contact-form").submit(function (event) {
-    event.preventDefault(); // mencegah reload halaman
+const btn = document.getElementById('button');
 
-    emailjs.init({
-        publicKey: "5Zp2jGRolQNauoQlC" // ← PUBLIC KEY kamu
-    });
+document.getElementById('contact-form')
+  .addEventListener('submit', function(event) {
+    event.preventDefault();
 
-    emailjs.sendForm('service_oj8srnw', 'template_zgugfyg', '#contact-form')
-        .then(function () {
-            alert("Form submitted successfully!");
-            document.getElementById("contact-form").reset();
-        }, function (error) {
-            console.error("FAILED...", error);
-            alert("Failed to send message. Please try again later.");
-        });
-});
+    btn.value = 'Sending...';
+
+    const serviceID = 'service_oj8srnw';
+    const templateID = 'template_zgugfyg';
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'Send Email';
+        alert('Sent!');
+        this.reset(); // reset form setelah terkirim
+      }, (err) => {
+        btn.value = 'Send Email';
+        console.error("FAILED...", err); // tampilkan error detail
+        alert("Failed to send:\n" + JSON.stringify(err));
+      });
+  });
 // <!-- emailjs to mail contact form data -->
 
 
