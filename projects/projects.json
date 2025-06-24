@@ -1,7 +1,7 @@
 [
   {
     "name": "Android Mobile Pentest Report",
-    "desc": "Comprehensive security assessment of Android applications through static analysis, dynamic testing, and runtime manipulation to identify OWASP Mobile Top 10 vulnerabilities",     
+    "desc": "Comprehensive security assessment of Android applications through static analysis, dynamic testing, and runtime manipulation to identify OWASP Mobile Top 10 vulnerabilities",
     "image": "notystackandroid",
     "category": "mern",
     "links": {
@@ -15,8 +15,8 @@
     "image": "vapt",
     "category": "mern",
     "links": {
-      "view": "https://github.com/kelvinprayoga46/PPT-PBL-RKS504",
-      "code": "https://github.com/kelvinprayoga46/PPT-PBL-RKS504"
+      "view": "",
+      "code": ""
     }
   },
   {
